@@ -4,11 +4,21 @@
 <head>
     <title>Leo Extension Popup Html</title>
     <meta charset="UTF-8">
-    <!--<link href="css/style.css" rel="stylesheet">-->
+    <link href="base.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Hi,Leo!</h1>
+    <div class="container">
+        <h1>郵地區號查詢</h1>
+        <div class="row">
+            <input type="text" id="addr" value="新北市三重區頂崁街" placeholder="地址">
+            <button id="query" type="button">查詢</button>
+        </div>
+        <div class="row">
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="popup.js"></script>
 </body>
-
 </html>
