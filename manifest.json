@@ -8,40 +8,10 @@
         "48": "icon48.png",
         "128": "icon128.png"
     },
-    "background": {
-        "persistent": false,
-        "scripts": [
-            "background.js"
-        ]
-    },
-    "content_scripts": [
-        {
-            "run_at": "document_end",
-            "matches": [
-                "http://www.google.com/*"
-            ],
-            "css": [
-                "base.css"
-            ],
-            "js": [
-                "jquery.js",
-                "base.js"
-            ]
-        }
-    ],
-    "permissions": [
-        "storage",
-        "notifications"
-    ],
     "browser_action": {
         "default_title": "Leo Extension",
         "default_icon": "icon16.png",
         "default_popup": "popup.html"
     },
-    "web_accessible_resources": [
-        "base.css",
-        "base.js"
-    ],
-    "content_security_policy":"script-src 'self' https://zip5.5432.tw/; object-src 'self'"
-    
+    "content_security_policy":"script-src 'self' https://zip5.5432.tw/; object-src 'self'"    
 }
