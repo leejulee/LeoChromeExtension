@@ -13,5 +13,17 @@
         "default_icon": "icon16.png",
         "default_popup": "popup.html"
     },
-    "content_security_policy":"script-src 'self' https://zip5.5432.tw/; object-src 'self'"    
+    "content_security_policy": "script-src 'self' https://zip5.5432.tw/; object-src 'self'",
+    "permissions": [
+        "contextMenus",
+        "notifications",
+        "storage"
+    ],
+    "background": {
+        "scripts": [
+            "jquery.js",
+            "utilities.js",
+            "background.js"
+        ]
+    }
 }
